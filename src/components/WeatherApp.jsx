@@ -17,7 +17,7 @@ import { toast } from 'react-toastify';
 */
 
 const WeatherApp = () => {
-    const API_KEY = "94af32bbb9ca739e25a41d496badba5f";
+    const API_KEY = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
 
     const [wicon, setWicon] = useState(null);
     const [weatherData, setWeatherData] = useState(null);
